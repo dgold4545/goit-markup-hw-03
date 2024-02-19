@@ -70,7 +70,7 @@ body {
 }
 
 .container {
-  max-width: 1128px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -181,6 +181,7 @@ address {
 
 .hero {
   background-color: var(--navy-blue);
+  padding: 188px 0;
 }
 
 .hero__title {
@@ -193,13 +194,15 @@ address {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
-  margin-top: 188px;
+  
 }
 
 .button {
   display: block;
   cursor: pointer;
-
+  min-width: 169px;
+  height: 56px;
+  border: none;
   font-family: var(--font-family);
   background-color: var(--iris);
   font-size: 16px;
@@ -215,7 +218,7 @@ address {
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 188px;
+  
 }
 
 .button:hover,
@@ -255,14 +258,11 @@ address {
 /* =========Finish QUALITY_SECTION ===========*/
 /* start - team section */
 
-
 /* =========Start TEAM_SECTION ===========*/
-
 
 .team {
   background-color: var(--cloud);
 }
-
 
 .team__title {
   font-size: 36px;
@@ -281,14 +281,16 @@ address {
   flex-basis: calc((100% - 72px) / 4);
   background-color: var(--white);
   border-radius: 0 0 4px 4px;
-  padding-bottom: 32px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
 }
 
 
-.team-list__img {
-  margin-bottom: 32px;
+
+.team-border {
+  padding: 32px 0;
 }
 .team-list__title {
   font-weight: 500;
@@ -305,7 +307,6 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--slate);
- 
 }
 
 /* finished - team section */
@@ -328,25 +329,20 @@ address {
 
 .portfolio-list {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
 }
 
-
 .portfolio-list__item {
-  flex-basis: calc((100% - 48px) / 3);
-  
-  
-  
+  width: calc((100% - 48px) / 3);
 }
 .portfolio_border {
   border-left: 1px solid var(--cornflower);
   border-right: 1px solid var(--cornflower);
   border-bottom: 1px solid var(--cornflower);
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
-
-
 
 .portfolio-list__title {
   font-weight: 500;
@@ -354,16 +350,14 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  padding-left: 16px;
-  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .portfolio-list__description {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  padding-left: 16px;
-
+  
 }
 
 /* finished - portfolio section */
@@ -377,7 +371,6 @@ address {
 }
 
 .footer .logo {
-  
   margin-bottom: 16px;
 }
 
