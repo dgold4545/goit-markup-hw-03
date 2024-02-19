@@ -44,6 +44,7 @@ img {
 
 a {
   text-decoration: none;
+  
 }
 
 .visually-hidden {
@@ -79,6 +80,14 @@ margin-left:  auto;
 margin-right:  auto;
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+
+/* ====== Start HEADER ====== */
+
 /* start - header__logo */
 .logo {
   font-family: var(--second-family);
@@ -88,6 +97,8 @@ margin-right:  auto;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
+  width: 115px;
+  margin-right: 76px;
 }
 
 .logo_color-black {
@@ -102,24 +113,54 @@ margin-right:  auto;
 
 /* finished - header__logo  */
 
-/* start - header__nav */
-.header__link {
+/* start - nav */
+
+.nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  
+}
+
+
+.nav__link {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 
-.header__link:hover,
-.header__link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--ocean);
 }
 
-/* finished - header__nav */
+
+.nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+
+/* finished - nav */
 
 /* start - address */
+.address__list {
+  display: flex;
+}
+
 address {
   font-style: normal;
+}
+
+.address__item:not(:last-child) {
+  margin-right: 40px;  
 }
 .address__contact {
   line-height: 1.5;
@@ -127,12 +168,27 @@ address {
   color: var(--slate);
 }
 
+
 .address__contact:hover,
 .address__contact:focus {
   color: var(--ocean);
 }
 
 /* finished - address */
+
+
+
+
+
+
+
+
+/* ======== End HEADER ======== */
+
+
+
+
+
 
 /* start - hero section */
 
